@@ -16,18 +16,20 @@ PATH_TO_BIN_JS = str(
         / "node_modules"
         / "jsoniq-language-server"
         / "dest"
-        "server.js"
+        / "server.js"
     ).resolve()
 )
 
 
 def main():
     # Run the language server
+    print("Starting language server...")
     server_proc = subprocess.Popen(
         [NODE, PATH_TO_BIN_JS, "--stdio", *sys.argv[1:]],
         stdin=sys.stdin,
         stdout=sys.stdout,
     )
+    print("Running language server...")
     sys.exit(server_proc.wait())
 
 

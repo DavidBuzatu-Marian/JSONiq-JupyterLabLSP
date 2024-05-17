@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/DavidBuzatu-Marian/JSONiq-JupyterLabLSP#readme",
   "dependencies": {
-    "jsoniq-language-server": "^1.0.0"
+    "jsoniq-language-server": "^1.0.1"
   }
 }
