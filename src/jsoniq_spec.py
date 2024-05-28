@@ -1,14 +1,16 @@
 def load(app):
     return {
-        "jsoniq-language-server": {
+        "jsoniq_language_server": {
             "version": 2,
-            "argv": ["jsoniq-lsp-start"],
-            "languages": ["jsoniq"],
+            "argv": ["jsoniq_lsp_start"],
+            "languages": ["jsoniq", "python"],
             "mime_types": [
                 "application/jsoniq",
+                "text/jsoniq",
+                "text/x-jsoniq",
                 "text/python",
                 "text/x-python",
-                "application/x-ipynb+json",
             ],
+            "display_name": "JSONiq Language Server",
         }
     }

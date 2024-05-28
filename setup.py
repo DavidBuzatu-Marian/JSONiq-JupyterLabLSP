@@ -10,9 +10,9 @@ setuptools.setup(
     license="Apache License 2.0",
     keywords="rumble jsoniq rumbledb json IPython jupyter",
     entry_points={
-        "console_scripts": ["jsoniq-lsp-start = src.jsoniq_lsp:main"],
+        "console_scripts": ["jsoniq_lsp_start = src.jsoniq_lsp:main"],
         "jupyter_lsp_spec_v1": [
-            "jupyter-jsoniq-language-server = src.jsoniq_spec:load"
+            "jupyter_jsoniq_language_server = src.jsoniq_spec:load"
         ],
     },
     classifiers=[
@@ -21,6 +21,6 @@ setuptools.setup(
         # Operating Systems.
         "Operating System :: OS Independent",
     ],
-    packages=setuptools.find_packages(where="src"),
-    install_requires=["jupyter"],
+    packages=setuptools.find_packages(),
+    include_package_data=True,
 )

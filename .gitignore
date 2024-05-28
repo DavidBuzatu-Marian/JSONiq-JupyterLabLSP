@@ -6,3 +6,4 @@ dist
 build
 __pycache__
 out.txt
+jsoniq_jupyter_lsp.egg-info
