@@ -3,6 +3,7 @@ def load(app):
         "jsoniq_language_server": {
             "version": 2,
             "argv": ["jsoniq_lsp_start"],
+            # Adding python is needed for the LSP extention to start the LS.
             "languages": ["jsoniq", "python"],
             "mime_types": [
                 "application/jsoniq",
