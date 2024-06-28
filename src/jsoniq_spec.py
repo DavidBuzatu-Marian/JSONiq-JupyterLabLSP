@@ -4,7 +4,7 @@ def load(app):
             "version": 2,
             "argv": ["jsoniq_lsp_start"],
             # Adding python is needed for the LSP extention to start the LS.
-            "languages": ["jsoniq", "python"],
+            "languages": ["jsoniq"],
             "mime_types": [
                 "application/jsoniq",
                 "text/jsoniq",
@@ -13,5 +13,6 @@ def load(app):
                 "text/x-python",
             ],
             "display_name": "JSONiq Language Server",
+            "requires_documents_on_disk": False,
         }
     }
